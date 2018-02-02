@@ -1,0 +1,16 @@
+<!--index.wxml-->
+ <view class="space-between" >
+
+    
+     <view class="section">
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{userArray}}" range-key="name">
+        <view class="picker">
+          当前账号：{{userArray[index].name}}
+        </view>
+      </picker>
+    </view> 
+    <button class="right-btn" bindtap="toRegister">注册   </button>
+</view>
+<view class="item-center" style="margin-top:200rpx">
+    <button class="check-on"  type="primary" bindtap="checkOn">打卡！</button>
+</view>

@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<form bindsubmit="submitUser">
+  <view class="section">
+      <button class="left-btn" bindtap="toIndex">到首页</button> 
+  </view>
+  <view class="input-ct">
+    <text class="input-text">昵称</text>
+    <input class="input" name="name"  placeholder="最大输入你的昵称" />
+  </view>
+  <view class="input-ct">
+    <text class="input-text">考勤id</text>
+    <input class="input" name="kqID" placeholder="请输入你的用户id" />
+  </view>
+  <view class="input-ct">
+    <text class="input-text">设备id</text>
+    <input class="input" name="deviceID"  placeholder="请输入你的设备id" />
+  </view>
+  <view class="input-ct">
+    <text class="input-text">设备型号</text>
+    <input class="input" name="deviceType"  placeholder="请输入你的设备型号" />
+  </view>
+   <button type="primary" formType="submit">提交信息</button>
+  <!-- <button  formType="submit">提交</button> -->
+</form>
